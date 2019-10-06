@@ -1,5 +1,5 @@
 .awn {
-  background: #77777722;
+  background: #cbcbcbff;
   border: 3mm;
   padding: 5mm;
   margin: auto;
@@ -36,8 +36,14 @@ h1 {
   margin-right: auto;
 }
 
+body {
+  background: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 button {
-  background: #77777722;
+  background: #cbcbcbff;
   border: 3mm;
 
   margin: auto;
@@ -48,7 +54,7 @@ button {
 }
 
 .questionElement{
-  background: #77777722;
+  background: #cbcbcbff;
   border: 3mm;
   padding: 15mm;
   margin: auto;

@@ -41,7 +41,7 @@ function confirmAwnser(){
 function resetBackgroundById (id) {
   if (id != null) {
     e = document.getElementById(id)
-    e.style.backgroundColor = '#77777722'
+    e.style.backgroundColor = '#cbcbcbff'
   }
 }
 
@@ -62,7 +62,7 @@ function setAwnser(elm) {
 function resetColors() {
   awnsers = document.getElementsByClassName("awn")
   for ( i = 0 ; i < awnsers.length;i++){
-    awnsers[i].style.backgroundColor = '#77777722'
+    awnsers[i].style.backgroundColor = '#cbcbcbff'
   }
 }
 
