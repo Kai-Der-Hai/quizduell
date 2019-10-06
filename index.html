@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<h1>QUIZDUELL</h1>
+<div class="questionElement" id="666">
+
+  <center>
+  <p id="questionText">Click next question to start</p>
+  <img class="image" id="questionImage" src=""></img>
+</center>
+</div>
+
+<div class="rightAnwsers" id ="corrAwnsers"> ans </div>
+
+<div class="awnsers">
+<p class="awn" id="ans1" onclick="setAwnser(this)" >...</p>
+<p class="awn" id="ans2" onclick="setAwnser(this)" >...</p>
+<p class="awn" id="ans3" onclick="setAwnser(this)" >...</p>
+<p class="awn" id="ans4" onclick="setAwnser(this)" >...</p>
+<div/>
+
+<center>
+<button onclick="nextQuestion()"> Next Question </button>
+
+<button onclick="confirmAwnser()">confirm awnser</button>
+</center>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="scripts/script.js"></script>
+</html>
