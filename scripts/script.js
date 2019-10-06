@@ -1,10 +1,12 @@
 
 const COLOR = "red";
 
+
 var selectedAwnserId= null;
 var questionId = 0;
 var correctAwnsers = 0;
 var currQuestion = null;
+
 
 var question = [{"question":"Wie heißt dieser junge Kerl ? ","awnser":{"ans1":"Spongebob","ans2":"Patrick","ans3":"Mr Crabbs","ans4":"Mrs.Puff"},"solution":"ans1","qImage":"img/spongebob.jpg" },
                 {"question":"frage 1","awnser":{"ans1":"A1","ans2":"B1","ans3":"C1","ans4":"D1"},"solution":"ans1","qImage":"" },

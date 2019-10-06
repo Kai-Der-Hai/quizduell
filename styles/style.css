@@ -11,6 +11,8 @@
   transition: all .2s;
 }
 
+
+
 #questionImage {
   margin: auto;
   width: 9cm;
@@ -27,6 +29,7 @@
 }
 
 h1 {
+  font-family: "porsche";
   text-align: center;
   color: blue;
   margin-left: auto;
@@ -56,4 +59,10 @@ button {
   font-family: "Courier New", Courier, monospace;
   box-shadow: 2px 1px #888888;
   transition: all .2s;
+}
+
+
+@font-face {
+  font-family: "porsche";
+  src: url("file:../fonts/911porschav3.ttf") format("truetype");
 }
