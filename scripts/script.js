@@ -9,7 +9,7 @@ var currQuestion = null;
 
 
 var question = [{"type":"std","question":"Wie heißt dieser junge Kerl ? ","awnser":{"ans1":"Spongebob","ans2":"Patrick","ans3":"Mr Crabbs","ans4":"Mrs.Puff"},"solution":"ans1","qImage":"img/spongebob.jpg" },
-                {"type":"free","question":"Abc", "awnser":{"ans1":1,"ans2":2,"ans3":3,"ans4":4},"hint":{"ans1":"i","ans2":"ii","ans3":"iii","ans4":"iv"},"qImage":""},
+                {"type":"free","question":"Das is ein anderer typ von frage. Die felder geben tipps auf die antwort, es konnen alle felder angeklickt werden.", "awnser":{"ans1":1,"ans2":2,"ans3":3,"ans4":4},"hint":{"ans1":"i","ans2":"ii","ans3":"iii","ans4":"iv"},"qImage":""},
                 {"type":"std","question":"frage 1","awnser":{"ans1":"A1","ans2":"B1","ans3":"C1","ans4":"D1"},"solution":"ans1","qImage":"" },
                 {"type":"std","question":"frag 2","awnser":{"ans1":"A2","ans2":"B2","ans3":"C2","ans4":"D2"} ,"solution":"ans2","qImage":"" },
                 {"type":"std","question":"frage 3","awnser":{"ans1":"A3","ans2":"B3","ans3":"C3","ans4":"D3"},"solution":"ans3","qImage":"" },
@@ -57,11 +57,12 @@ function setAwnser(elm) {
   if (currQuestion.type == "std"){
     resetBackgroundById(selectedAwnserId)
     p = elm.parentElement
-    elm.style.backgroundColor = "yellow"
+    elm.style.backgroundColor = "#ffffc0ff" // yellow
     selectedAwnserId = elm.id
     console.log( "the selected Awnser is" ,selectedAwnserId)
   } else if (currQuestion.type == "free") {
     elm.innerHTML = currQuestion.hint[elm.id]
+    elm.style.backgroundColor = "#ffccaaff" //orange
   }
 }
 
